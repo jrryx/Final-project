@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This will change your life</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: whitesmoke;
+        background-color: darkslategrey;
+        font-weight: 900;
+        font-size: 60px;
+        font-family: cursive;
+      }
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+      }
+      h3 {
+        text-align: center;
+        color: whitesmoke;
+        background-color: #55708c;
+        font-family: cursive;
+        font-size: 40px;
+      }
+      h4 {
+        text-align: center;
+        color: whitesmoke;
+        background-color: #ad88ab;
+        font-family: cursive;
+        font-size: 40px;
+      }
+
+      p {
+        text-align: center;
+        margin: 40px 200px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        color: orangered;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      button {
+        display: block;
+        background: #5e5df0;
+        border-radius: 999px;
+        box-shadow: #5e5df0 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+          NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+          EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto,
+          "Helvetica Neue", "Noto Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        width: fit-content;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Live ♥ Laugh ♥ Love</h1>
+    <h2>You haven't experienced life, until you have met these guys...</h2>
+    <img src="https://i.imgur.com/4y83DHR.png" alt="Chico and Chimi" />
+    <p>
+      Introducing, these 2 pieces of art, hand crafted by a higher power. These
+      amazing perfect tiny bundles of joy were created in 2020. Though this is
+      highly debated for the eldest of the 2, as it is clear he has lived many
+      lives before this one.
+    </p>
+    <h3>This is Chico</h3>
+    <img src="https://i.imgur.com/Z4Lqw9c.png" alt="Chico" />
+    <p>
+      Chico was born on the 15th of March, 2020. Some may call him the runt of
+      the litter, others argue you cannot rush perfection.
+      <br />
+      <br />
+      Still only 800g as a 6 month old, Chico decided to not waste all this
+      growing energy on his body, but on his brain. With a such a high
+      intellegence, also comes with a few burdens. He has a strong personality,
+      can be stubborn and does not accept people without trust. He can be a
+      little judgemental, to be honest. But with that, any affection is so much
+      more powerful.
+      <br />
+      <br />
+      His existance has been celebrated by many, with artworks created in his
+      honour.
+    </p>
+    <img src="https://i.imgur.com/qNdK7Fp.png" alt="Chico Fan Art" />
+
+    <br />
+
+    <h4>This is Chimichurri</h4>
+    <img src="https://i.imgur.com/q2Jg92m.png" alt="Chimi" />
+    <p>
+      Chimi was born on the 9th of November, 2020. Having the biggest glow up of
+      the 2, Chimi resembled a tiny Husky.
+      <br />
+      <br />
+      As many of the beauties before her, Demi Moore, Beyonce, Taylor Swift to
+      name a few, Chimi needed some time to evolve into the beautiful butterfly
+      she is today. Now standing tall with her long legs and blond locks, Chimi
+      is a ball of energy, strong and independant. With a bright personality,
+      she is extremely extroverted and loves everyone she meets! She is
+      protective of her more introverted brother, and will be the first to
+      assess and greet strangers.
+      <br />
+      <br />
+      As the newest member for the family, she may have less artworks, but her
+      beauty is well known.
+    </p>
+    <img
+      src="https://i.imgur.com/RnHx2wh.jpg"
+      alt="Chimi Fan Art"
+      height="1000"
+      width="800"
+    />
+    <hr />
+    <p>
+      <em>
+        To find out more about these precious sweet angels, check out their
+        Instagram below</em
+      >
+    </p>
+    <a href="https://instagram.com/chicoandchimichurri/" target="_blank"
+      >Follow @chicoandchimichurri</a
+    >
+
+    <br />
+    <br />
+
+    <button class="button" type="button">Choose your favourite!</button>
+    <script>
+      function favourite() {
+        let name = prompt("What is your name?");
+        let dog = prompt("Who is your favourite dog?");
+        if (dog === "Chico") {
+          alert(
+            "Great choice, " + name + "!" + " He is a special boy 😍 😍 😍 "
+          );
+        } else if (dog === "Chimichurri") {
+          alert(
+            "Great choice, " +
+              name +
+              "!" +
+              " She is a special little girl 😘 😘 😘 "
+          );
+        } else if (dog === "Chimi") {
+          alert("Great choice, " + name + "!" + " We love Chimi 😌 😌 😌 ");
+        } else {
+          alert("Okay " + name + " I'm sure " + dog + " is a great pet too");
+        }
+      }
+      let choose = document.querySelector("button");
+      choose.addEventListener("click", favourite);
+    </script>
+  </body>
+</html>
